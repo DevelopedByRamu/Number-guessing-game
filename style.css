@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./img/bg.jpg) bottom;
+  background: #ffffff;
   object-fit: cover;
 }
 
@@ -26,7 +26,7 @@ body {
 .wrapper header {
   font-size: 25px;
   font-weight: 500;
-  color: #541d5a;
+  color: #8e26a0;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -108,4 +108,469 @@ input::-webkit-outer-spin-button {
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   }
+}
+
+/* shake animation for losing message */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* jump animation for success message */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jump {
+  animation: jump 0.5s ease-out;
+}
+
+/* floating sad faces for loss */
+.sad-face {
+  position: absolute;
+  font-size: 6rem;
+  pointer-events: none;
+  z-index: 10;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(40px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-15px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-30px);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(25px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(50px);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-20px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-40px);
+  }
+}
+
+@keyframes float5 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(10px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+  }
+}
+
+.float1 {
+  animation-name: float1;
+}
+.float2 {
+  animation-name: float2;
+}
+.float3 {
+  animation-name: float3;
+}
+.float4 {
+  animation-name: float4;
+}
+.float5 {
+  animation-name: float5;
+}
+
+@keyframes float6 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-25px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-50px);
+  }
+}
+
+@keyframes float7 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(30px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(60px);
+  }
+}
+
+@keyframes float8 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-10px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-20px);
+  }
+}
+
+@keyframes float9 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(35px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(70px);
+  }
+}
+
+@keyframes float10 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-35px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-70px);
+  }
+}
+
+@keyframes float11 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(15px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px);
+  }
+}
+
+@keyframes float12 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-40px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-80px);
+  }
+}
+
+.float6 {
+  animation-name: float6;
+}
+.float7 {
+  animation-name: float7;
+}
+.float8 {
+  animation-name: float8;
+}
+.float9 {
+  animation-name: float9;
+}
+.float10 {
+  animation-name: float10;
+}
+.float11 {
+  animation-name: float11;
+}
+.float12 {
+  animation-name: float12;
+}
+
+@keyframes float13 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(45px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(90px);
+  }
+}
+
+@keyframes float14 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-45px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-90px);
+  }
+}
+
+@keyframes float15 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(50px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(100px);
+  }
+}
+
+@keyframes float16 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-50px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-100px);
+  }
+}
+
+@keyframes float17 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(55px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(110px);
+  }
+}
+
+@keyframes float18 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-55px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-110px);
+  }
+}
+
+@keyframes float19 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(60px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(120px);
+  }
+}
+
+@keyframes float20 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-60px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-120px);
+  }
+}
+
+@keyframes float21 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(65px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(130px);
+  }
+}
+
+@keyframes float22 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-65px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-130px);
+  }
+}
+
+@keyframes float23 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(70px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(140px);
+  }
+}
+
+@keyframes float24 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-70px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-140px);
+  }
+}
+
+@keyframes float25 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(75px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(150px);
+  }
+}
+
+@keyframes float26 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(-75px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-150px);
+  }
+}
+
+@keyframes float27 {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(80px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(160px);
+  }
+}
+
+.float13 {
+  animation-name: float13;
+}
+.float14 {
+  animation-name: float14;
+}
+.float15 {
+  animation-name: float15;
+}
+.float16 {
+  animation-name: float16;
+}
+.float17 {
+  animation-name: float17;
+}
+.float18 {
+  animation-name: float18;
+}
+.float19 {
+  animation-name: float19;
+}
+.float20 {
+  animation-name: float20;
+}
+.float21 {
+  animation-name: float21;
+}
+.float22 {
+  animation-name: float22;
+}
+.float23 {
+  animation-name: float23;
+}
+.float24 {
+  animation-name: float24;
+}
+.float25 {
+  animation-name: float25;
+}
+.float26 {
+  animation-name: float26;
+}
+.float27 {
+  animation-name: float27;
 }
